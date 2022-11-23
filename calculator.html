@@ -1,0 +1,69 @@
+<hmtl>
+	<head>
+		<title></title>
+		<script>
+			function calci()
+			{
+				var data=document.getElementById('result').value;
+				var res=eval(data);
+				document.getElementById('result').value=res;
+			}
+		</script>
+		<style>
+			div
+			{
+				margin-left: 35%;
+				margin-top: 5%;
+				height: 220px;
+				width: 180px;
+				background: black;
+				border-radius: 10px;
+				color: whitesmoke;
+				text-align: center;
+				padding-top: 10px;
+			}
+			#result
+			{
+				width: 150px;
+				height: 25px;
+				border-radius: 5px;
+				color: darkblue;
+			}
+			#equal
+			{
+				background: deepskyblue;
+			}
+			.operators
+			{
+				background: darkorange;
+
+			}
+			button
+			{
+				background: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<sapn>Calculator</span><br>
+		<input type="text" id="result"><br><br>
+		<button onclick="document.getElementById('result').value+='9'">9</button>
+		<button onclick="document.getElementById('result').value+='8'">8</button>
+		<button onclick="document.getElementById('result').value+='7'">7</button>
+		<button onclick="document.getElementById('result').value+='+'" class='operators'>+</button><br><br>
+		<button onclick="document.getElementById('result').value+='6'">6</button>
+		<button onclick="document.getElementById('result').value+='5'">5</button>
+		<button onclick="document.getElementById('result').value+='4'">4</button>
+		<button onclick="document.getElementById('result').value+='-'" class='operators'>-&nbsp</button><br><br>
+		<button onclick="document.getElementById('result').value+='3'">3</button>
+		<button onclick="document.getElementById('result').value+='2'">2</button>
+		<button onclick="document.getElementById('result').value+='1'">1</button>
+		<button onclick="document.getElementById('result').value+='*'" class='operators'>x</button><br><br>
+		<button onclick="document.getElementById('result').value=''" >c</button>
+		<button onclick="document.getElementById('result').value+='0'">0</button>
+		<button onclick="calci()" id="equal">=</button>
+		<button onclick="document.getElementById('result').value+='/'" class='operators'>/&nbsp</button>
+		</div>
+	</body>
+</hmtl>
